@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>内容溢出处理</title>
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <style>
+    .twospace {
+      text-indent: 25px
+    }
+  </style>
+</head>
+
+<body>
+  <h4>内容溢出处理overflow</h4>
+  <ul>
+    <li>overflow：内容溢出如何显示
+      <div class="twospace">overflow:hidden; </div>
+      <div class="twospace">overflow:auto; </div>
+      <div class="twospace">overflow:scroll </div>
+      <div class="twospace"> </div>
+    </li>
+  </ul>
+
+  <h4>继承</h4>
+  <ul>
+    <li>外层元素的样式，会被里面的元素所继承</li>
+    <li></li>
+    <li>文本的属性可以继承：font-size;font-family;font-weight;font-italic;color;text-decoration;...</li>
+    <li>注意：自己有的属性不会向外继承</li>
+  </ul>
+
+  <h4>优先级</h4>
+  <ul>
+    <li>单个选择器的优先级：
+      <div class="twospace"> 行内标签样式 > id选择器 > 类选择器 > 标签选择器 </div>
+    </li>
+    <li>符合选择器的优先级：
+      <div class="twospace">写的精确，优先级越高 </div>
+    </li>
+
+  </ul>
+
+  <h4>浮动影响</h4>
+  <ul>
+    div里面有父盒子，父盒子没有设置固定高，里面的div设置了浮动， 父元素没有设置高度，也无法根据子元素正常计算高度，如何让父元素得到自然高
+    <li>1.父元素底部加个元素：元素增加样式：clear:both;清除浮动</li>
+    <li>clear:left;清除左浮动</li>
+    <li>clear:right;清除右浮动</li>
+
+    <li>2.父元素的样式中加：overflow:hidden;/*父元素得到自然高*/这是浏览器的一个bug</li>
+  </ul>
+
+
+</body>
+
+</html>

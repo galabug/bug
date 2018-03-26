@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>16flex</title>
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <style>
+    .twospace {
+      text-indent: 25px
+    }
+  </style>
+</head>
+
+<body>
+
+  <h4>16flex</h4>
+
+  <li>
+    div申明 display:flex，这个div变成了一个flex容器。 它的所有子元素都是Flex项目。 子元素不能够使用，float、vertical-align、clear这几个属性
+  </li>
+  Flex布局
+  <ol>
+    <h5>六个属性</h5>
+    <li>justify-content:用于指定主轴(水平方向)上Flex子项的对齐方式
+      <div class="twospace">flex-start | flex-end | center | space-between | space-around</div>
+      <div class="twospace">lex-start（默认值）：左对齐  </div>
+      <div class="twospace">  flex-end：右对齐</div>
+      <div class="twospace">center： 居中</div>
+      <div class="twospace"> space-between：两端对齐，项目之间的间隔都相等。</div>
+      <div class="twospace">space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</div>
+    </li>
+    
+    <li>align-items:用于指定侧轴(垂直方向)上Flex子项的对齐方式
+      <div class="twospace">stretch | flex-start | flex-end | center | baseline</div>
+      <div class="twospace">
+        stretch：默认值，当Flex子项未设置高度或者高度值为auto时，stretch起作用，将Flex子项高度设置为行高度。这里需要注意，在只有一行的情况下，行的高度为容器的高度，即Flex子项高度为容器的高度
+      </div>
+      <div class="twospace">flex-start：表示与侧轴开始位置对齐</div>
+      <div class="twospace">flex-end：表示与侧轴的结束位置对齐</div>
+      <div class="twospace">center：表示与侧轴中间对其</div>
+      <div class="twospace">baseline：表示基线对齐，当行内轴与侧轴在同一线上，即所有Flex子项的基线在同一线上时，效果等同于flex-start</div>
+      <div class="twospace"></div>
+    </li>
+    
+    <li>
+      align-content: 该属性只作用于多行的情况下，用于多行的对齐方式
+      <div class="twospace">stretch | flex-start | flex-end | center | space-between | space-around</div>
+      <div class="twospace">stretch：默认值，当Flex子项未设置高度或者高度值为auto时，stretch起作用，将Flex子项高度设置为行高度</div>
+      <div class="twospace">flex-start：表示各行与侧轴开始位置对齐，第一行紧靠侧轴开始边界，之后的每一行都紧靠前面一行</div>
+      <div class="twospace">flex-end：表示各行与侧轴的结束位置对齐，最后一行紧靠侧轴结束边界，之后的每一行都紧靠前面一行</div>
+      <div class="twospace">center：表示各行与侧轴中间对其</div>
+      <div class="twospace">space-between：表示两端对齐，中间间距相等。要注意特殊情况，当剩余空间为负数时，效果等同于flex-start </div>
+      <div class="twospace">space-around：表示各行之间间距相等，中间间距是两端间距的2倍。要注意特殊情况，当剩余空间为负数时，效果等同于center</div>
+    </li>
+
+    <li>
+      flex-direction: 用于指定Flex主轴的方向，继而决定 Flex子项在Flex容器中的位置
+      <div class="twospace">row | row-reverse | column | column-reverse</div>
+      <div class="twospace">row：默认值，表示水平方向从左到右排列，此时水平方向轴线为主轴</div>
+      <div class="twospace">row-reverse：与row相反</div>
+      <div class="twospace">column：表示垂直方向从上到下排列，此时垂直方向轴线为主轴</div>
+      <div class="twospace">column-reverse：与column相反</div>
+    </li>
+
+    <li>
+      flex-wrap:用于指定Flex子项是否换行
+      <div class="twospace">nowrap：默认值，表示不换行，Flex子项可能会溢出</div>
+      <div class="twospace">wrap：表示换行，溢出的Flex子项会被放到下一行</div>
+      <div class="twospace">wrap-reverse：表示反方向换行</div>
+    </li>
+    <li>
+      flex-flow
+      <div class="twospace">复合属性，是flex-direction 和 flex-wrap 的简写属性，是用于指定Flex子项的排列方式</div>
+    </li>
+  </ol>
+
+</body>
+
+</html>

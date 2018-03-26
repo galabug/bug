@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>css3</title>
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <style>
+    .twospace {
+      text-indent: 25px
+    }
+  </style>
+</head>
+
+<body>
+  <h4>css3</h4>
+  <ul>
+    <li>css2+新语法</li>
+    <li>对css2进行扩充 删减 优化</li>
+  </ul>
+
+  <h4>选择器</h4>
+  <ul>
+    <li>选择器：选择器、id选择器、标签选择器</li>
+    <li>属性选择器：
+      <div class="twospace">E-element元素 data-属性</div>
+      <div class="twospace">E[data] </div>
+      <div class="twospace">E[data="one"]</div>
+      <div class="twospace">E[data^="o"]</div>
+      <div class="twospace">E[data$="e"]</div>
+      <div class="twospace">E[data*="e"]</div>
+    </li>
+  </ul>
+
+  <h4>伪类结构</h4>
+  <ul>
+    <li>E-element元素 data-属性</li>
+    <li>
+      <div class="twospace">E:first-child{} </div>
+      <div class="twospace">E:last-child{} </div>
+      <div class="twospace">E:only-child{}</div>
+      <div class="twospace">E:nth-child(n){}</div>
+      <div class="twospace">E:nth-child(2n+1){}</div>
+      <div class="twospace">E:nth-child(odd){}</div>
+      <div class="twospace">E:nth-child(2n){}</div>
+      <div class="twospace">E:nth-child(even){}</div>
+    </li>
+  </ul>
+
+  <h4>伪元素</h4>
+  <ul>
+    <li>E-element元素 data-属性</li>
+    <li>
+      <div class="twospace">E:first-letter{} 设置第一个元素</div>
+      <div class="twospace">E:last-line{} 设置第一行元素</div>
+      <div class="twospace">E::after{content:"ddd";}在盒子里面最后面插入内容</div>
+      <div class="twospace">E::before{content:"ddd";}在盒子里面最前面插入内容</div>
+    </li>
+  </ul>
+
+  <h4>文本阴影 text-shadow:水平 垂直 模糊强度（可不填） 颜色（可不填，默认黑色）</h4>
+  <ul>
+    <li>text-shadow:2px 2px 2px red，-2px -2px 2px blue;</li>
+    <li>水平：正值-右侧，负值-左侧</li>
+    <li>垂直：正值-下，负值-上</li>
+    <li>可以有多组值，之间用逗号相隔</li>
+  </ul>
+  
+  <h4>盒子阴影 box-shadow:水平 垂直 模糊强度 模糊尺寸 内外阴影（inside/outside-默认） 颜色</h4>
+  <ul>
+    <li>box-shadow:2px 2px 2px 2px gray,-2px -2px 2px 2px blue;</li>
+    <li>水平：正值-右侧，负值-左侧</li>
+    <li>垂直：正值-下，负值-上</li>
+    <li>可以有多组值，之间用逗号相隔</li>
+  </ul>
+
+  <h4>盒子圆角 border-radius:左上 右上 右下 左下</h4>
+  <ul>
+    <li>border-radius：50%；--圆</li>
+  </ul>
+
+  <h4>设置半透明色</h4>
+  <ul>
+    <li>设置半透明色
+      color:rgb(0,0,0,0.6)
+      background:rgb(0,0,0,0.5)
+    </li>
+  </ul>
+
+  <h4>背景缩放</h4>
+  <ul>
+    <li>background-size:宽度 高度；</li>
+    <li>background-size:400px 600px；</li>
+    <li>background-size:cover；高宽覆盖整个盒子</li>
+    <li>background-size:contain；高或者宽某项覆盖了整个个盒子</li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

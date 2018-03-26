@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <style>
+    .home_btm {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      height: 48px;
+      background-color: #FFF;
+    }
+
+    .menu_box {
+      width: 20%;
+      height: 48px;
+      float: left;
+      position: relative;
+      text-align: -webkit-center;
+    }
+
+    .home_btm .btm_img {
+      width: 48px;
+      height: 100%;
+    }
+
+
+    .flextest {
+      display: flex;
+      width: 100%;
+      /* justify-content: flex-start ;  默认*/
+      /* justify-content: center; */
+      /* justify-content: flex-end; */
+      justify-content: space-around;
+      /* justify-content: space-between; */
+    }
+
+    .flextest1 {
+      display: flex;
+      width: 100%;
+      height: 200px;
+      flex-direction:column;
+      /* align-items: center; */
+      /* align-items: flex-end; */
+      /* align-items: baseline ; */
+      /* align-items: stretch; */
+      align-content:
+
+    }
+
+    .flextest2 {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      height: 100%;
+    }
+
+    .flextest3 {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+
+    .flex_item {
+      width: 10%;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="flextest">
+    <div class="bg-1 flex_item">1</div>
+    <div class="bg-2 flex_item"> 2</div>
+    <div class="bg-4 flex_item">3</div>
+    <div class="bg-5 flex_item">4</div>
+    <div class="bg-7 flex_item">5</div>
+  </div>
+
+  <div class="flextest1">
+    <div class="bg-1 flex_item">1</div>
+    <div class="bg-2 flex_item"> 2</div>
+    <div class="bg-7 flex_item"> 3</div>
+    <div class="bg-13 flex_item"> 4</div>
+  </div>
+
+  <!-- <div class="flextest2">
+    <div class="bg-1 flex_item">1</div>
+    <div class="bg-2 flex_item"> 2</div>
+  </div>
+
+  <div class="flextest3">
+    <div class="bg-1 flex_item">1</div>
+    <div class="bg-2 flex_item"> 2</div>
+  </div> -->
+
+
+
+
+
+  <footer class="home_btm" style="overflow:visible;">
+    <div class="menu_box" onclick="clickBottomMenu(0)">
+      <img src="images/menu/bottombar_home_48_blue@3x.png" class="btm_img">
+    </div>
+    <div class=" menu_box" onclick="clickBottomMenu(1)">
+      <img src="images/menu/bottombar_finance_48@3x.png" class="btm_img">
+    </div>
+    <div class="menu_box" onclick="clickBottomMenu(2)" style="height:68px;margin-top:-20px;">
+      <img src="images/menu/bottombar_scanpayment@3x.png" class="btm_img">
+    </div>
+    <div class="menu_box" onclick="clickBottomMenu(3)">
+      <img src="images/menu/bottombar_life_48@3x.png" alt="" class="btm_img">
+    </div>
+    <div class="menu_box" onclick="clickBottomMenu(4)">
+      <img src="images/menu/bottombar_me_48@3x.png" alt="" class="btm_img">
+    </div>
+  </footer>
+  <script>
+    var menuImages = [
+      'images/menu/bottombar_home_48@3x.png',
+      'images/menu/bottombar_finance_48@3x.png',
+      'images/menu/bottombar_scanpayment@3x.png',
+      'images/menu/bottombar_life_48@3x.png',
+      'images/menu/bottombar_me_48@3x.png'
+    ]
+    var menuBlueImages = [
+      'images/menu/bottombar_home_48_blue@3x.png',
+      'images/menu/bottombar_finance_48_blue@3x.png',
+      'images/menu/bottombar_scanpayment@3x.png',
+      'images/menu/bottombar_life_48_blue@3x.png',
+      'images/menu/bottombar_me_48_blue@3x.png'
+    ]
+    function clickBottomMenu(i) {
+      var imgDoms = document.getElementsByClassName('btm_img');
+      for (let j = 0; j < imgDoms.length; j++) {
+        const el = imgDoms[j];
+        el.src = j === i ? menuBlueImages[j] : menuImages[j];
+      }
+    }
+  </script>
+</body>
+
+</html>

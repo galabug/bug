@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>引入方式</title>
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+</head>
+
+<body>
+  <h2>在HTML结构中引入css样式的方法</h2>
+  <li>
+    1.行内样式表:标签的style属性定义(只对当前标签生效)
+    <br> 格式：&lt;标签 style="属性名:属性值;"&gt;内容&lt;/标签&gt;
+  </li>
+  <li>
+    2.内嵌样式表：在style标签中定义（只对当前文件有效）
+    <br> 格式：
+    <br> &lt;style type="text/css"&gt;
+    <br> 选择器{属性名：属性值}
+    <br>&lt;/style&gt;
+  </li>
+  <li>
+    3.外部样式表：（***最常用***）
+    <br> 格式：&lt;link rel="stylesheet" href="路径/css文件.css"&gt;内容&lt;/link&gt;
+
+  </li>
+  <li>
+    4.导入样式表：管理css样式
+    <br> 格式：@import url(另外一个css样式文件)
+    <h4>注意：@import是css样式标签，在css文件或者style标签里的最上面</h4>
+  </li>
+</body>
+
+</html>

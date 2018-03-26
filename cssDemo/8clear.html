@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>清除格式</title>
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <style>
+    .twospace {
+      text-indent: 25px
+    }
+  </style>
+</head>
+
+<body>
+  <h4>清除格式</h4>
+  <ul>
+    <li>清除所有的html标签的格式，后期如果要使用，重新设置
+      <div class="twospace">
+        ie6不支持这种格式:*{margin:0;padding:0 }
+      </div>
+      <div class="twospace">
+        兼容把所有标签列出来： body,table,p,ul,li,h1,h2,h3,h4,h5,h6,dd,dt,i,b,a...{margin:0;padding:0; }
+      </div>
+    </li>
+  </ul>
+
+  <h4>网页的布局思想</h4>
+  <ol>
+    <li>清除格式</li>
+    <li>设置页面属性设置body{}
+      <div class="twospace">
+        body{ font-size:14px; font-family:宋体; color:#000; backgrount-color:#e2e2e2; line-height:150%; }
+      </div>
+      <div class="twospace">
+        body{背景颜色/背景图片 文本大小 文本颜色 文本字体 行间距}
+      </div>
+    </li>
+    <li>把整个页面划分结构：从上往下，从左往右</li>
+  </ol>
+
+  <h4>行内元素和块元素</h4>
+  <ul>
+    <li>
+      行内标签：标签不换行的，不独占一行：
+      <div class="twospace">span,b，i,u,strong,a</div>
+      <div class="twospace">height,width宽高不能设置，由里面的内容决定</div>
+      <div class="twospace">css样式：display:inline</div>
+    </li>
+    <li>
+      块标签：标签换行的，独占一行：
+      <div class="twospace">div,p,table,ul,li,ol,dl,dt,dd,h1...</div>
+      <div class="twospace">css样式：display:block</div>
+    </li>
+    <li>块标签 行内标签相互转化 display:inline/block;
+    </li>
+  </ul>
+</body>
+
+</html>

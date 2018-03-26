@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>背景属性</title>
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <style>
+    .twospace {
+      text-indent: 25px
+    }
+  </style>
+</head>
+
+<body>
+
+  <h4>背景属性</h4>
+  <ul>
+    <li>background-color：背景颜色</li>
+    <li>background-image：背景图片 ***background-image：url(path)</li>
+    <li>background-repeat：背景图片是否平铺：no-repeat(不平铺)
+      <div class="twospace">no-repeat(不平铺)</div>
+      <div class="twospace">repeat-x(横向平铺)</div>
+      <div class="twospace">repeat-y(纵向平铺)</div>
+      <div class="twospace">repeat(横向和纵向都平铺，默认)</div>
+    </li>
+    <li>background-attachment:背景附件，背景是否随着上方的内容一起滚动：取值（fixed:固定，scroll滚动）</li>
+    <li>background-position:背景图片的展开方式
+      <div class="twospace">background-position:水平 垂直</div>
+      <div class="twospace">英文：（left center right）（top center bottom）</div>
+      <div class="twospace">数值：正值 负值</div>
+
+    </li>
+    <li>简写：background：背景颜色 背景图片 是否平铺 （附件通常仅用在body标签） 水平 垂直</li>
+    <li>只有水平和垂直的顺序不能颠倒，其他的位置可以换</li>
+  </ul>
+</body>
+
+</html>

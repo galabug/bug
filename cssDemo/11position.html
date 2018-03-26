@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>定位</title>
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <style>
+    .twospace {
+      text-indent: 25px
+    }
+  </style>
+</head>
+
+<body>
+  <h4>定位</h4>
+  <ul>
+    <b>position定位方式有：static默认，fixed固定,relative相对，absolute绝对</b>
+    <br>
+    <b>坐标:left,right,top,bottom</b>
+    <li>static:默认</li>
+
+    <li>fixed：固定定位
+      <div class="twospace">1.相对于浏览器窗口进行定位 </div>
+      <div class="twospace">2.如果不设置，就在原来的位置 </div>
+      <div class="twospace">3.层级比其他普通标签高 </div>
+    </li>
+    <li>relative:相对定位
+      <div class="twospace">1.相对定位占空间</div>
+      <div class="twospace">2.如果不结合定位坐标，就在原来的位置 </div>
+      <div class="twospace"> 3.结合定位坐标，相对于自身作为定位的原点</div>
+      <div class="twospace"> 4.层级高于普通标签</div>
+    </li>
+    <li>absolute:绝对定位
+      <div class="twospace">1.绝对定位不占空间</div>
+      <div class="twospace"> 2.设置层级高于普通的标签</div>
+      <div class="twospace"> 3.不结合定位坐标，就是在原来的位置</div>
+      <div class="twospace"> 4.结合定位坐标，以设置了绝对/相对定位的元素的祖先为原点</div>
+      <div class="twospace"> 5.结合定位坐标，如果祖先没有设置绝对/相对定位，则以body为原点</div>
+    </li>
+  </ul>
+
+
+</body>
+
+</html>
