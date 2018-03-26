@@ -22,7 +22,7 @@
 
 ## 链接
 在 Markdown 中，插入链接使用 [显示文本](链接地址) 
-[cssDemo](https://github.com/galabug/javascript/blob/master/cssDemo/css.html)
+[cssDemo](https://galabug.github.io/javascript/cssDemo/css.html)
 
 插入图片使用 ![](图片链接地址) 
 
