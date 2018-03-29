@@ -15,17 +15,27 @@
 一个 long 整数，是个非零值，没别的意义。你可以传这个值给 window.cancelAnimationFrame() 以取消回调函数。
 
 - 范例
+
 > var start = null;
+
 > var element = document.getElementById('SomeElementYouWantToAnimate');
+
 > element.style.position = 'absolute';
 
 > function step(timestamp) {
+
 >   if (!start) start = timestamp;
+
 >   var progress = timestamp - start;
+
 >   element.style.left = Math.min(progress / 10, 200) + 'px';
+
 >   if (progress < 2000) {
+
 >     window.requestAnimationFrame(step);
+
 >   }
+
 > }
 
 > window.requestAnimationFrame(step);
