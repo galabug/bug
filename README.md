@@ -1,5 +1,5 @@
 ### javascript
-[requestAnimationFrame](https://github.com/galabug/bug/blob/master/doc/js/window%E5%B1%9E%E6%80%A7%E6%96%B9%E6%B3%95.md)
+[requestAnimationFrame](https://github.com/galabug/bug/blob/master/doc/js/window.md)
 
 
 ## 链接
