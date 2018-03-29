@@ -1,28 +1,9 @@
-# javascript
-## 标题
-- # 一级标题
-- ## 二级标题
-- ### 三级标题
-- #### 四级标题
-- ##### 五级标题
-- ###### 六级标题 
+### javascript
+[requestAnimationFrame](https://github.com/galabug/bug/blob/master/doc/js/window%E5%B1%9E%E6%80%A7%E6%96%B9%E6%B3%95.md)
 
-## 列表
-列表格式在文字前面加上 - 
-
-### - 文本1
-### - 文本2
-### - 文本3
-有序列表在文字前面加上 1. 2. 3. 
-
-### 1. 文本1
-### 2. 文本2
-### 3. 文本3
-注：-、1.和文本之间要保留一个字符的空格
 
 ## 链接
 在 Markdown 中，插入链接使用 [显示文本](链接地址) 
-[cssDemo](https://galabug.github.io/javascript/cssDemo/css.html)
 
 插入图片使用 ![](图片链接地址) 
 
