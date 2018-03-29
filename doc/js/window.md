@@ -12,7 +12,7 @@
   一个 long 整数，是个非零值，没别的意义。你可以传这个值给 window.cancelAnimationFrame() 以取消回调函数。
 
 
-### 普及下缓动(Tween)知识吧：
+### 普及下缓动(Tween)知识：
 
     - Linear：无缓动效果
     - Quadratic：二次方的缓动（t^2）
